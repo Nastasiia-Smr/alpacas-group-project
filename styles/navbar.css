@@ -11,10 +11,12 @@
 /* desktop */
 .navbar{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     /* flex-direction: column; */
     background-color: #98a1a8;
+    position: fixed;
 }
 .brand-title{
     font-size: 2rem; 
