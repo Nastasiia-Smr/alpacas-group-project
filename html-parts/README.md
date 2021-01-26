@@ -1,0 +1,1 @@
+This folder should be used to put html parts from collaborators
