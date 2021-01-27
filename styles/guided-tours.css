@@ -1,0 +1,127 @@
+/* GENERAL */
+
+/* i know the style looks super ugly now, but i had not much ideas, will work oi it more. */
+@import "colors.css";
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GUIDED TOURS CARDS */
+.guided-tours {
+  background: var(--color-accent-tint-blue-4);
+}
+.card-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+}
+.card-item {
+  width: 323px;
+  padding: 15px;
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+}
+.card-item * {
+  transition: 0.3s linear;
+}
+.card-content {
+  background: var(--color-primary-tint-orange-8);
+  padding: 40px;
+  /* padding: 2em; */
+}
+
+.card-body {
+  color: #f5e2cd;
+  font-size: 14px;
+}
+.card-body h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition-delay: 0.05s;
+}
+.card-body p {
+  transition-delay: 0.1s;
+}
+.card-footer {
+  padding-top: 15px;
+}
+.card-link {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding-right: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f5e2cd;
+}
+
+/* CARD STICKER */
+
+/* .tour-card-sticker {
+  background-color: #efccb8;
+  text-align: center;
+  padding: 5px 50px;
+  cursor: pointer;
+} */
+
+/* MEDIA@ */
+
+/* @media (min-width: 768px) {
+  .card-item {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 960px) {
+  .card-item {
+    flex-basis: 33.333333333%;
+  }
+} */
+
+
+/* .button {
+  background-color: #97886b;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: auto 20px;
+  display: block;
+  max-width: 400px;
+}
+
+.sticker {
+  background-color: black;
+  color: white;
+  font-size: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.card {
+  background-color: grey;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  max-width: 350px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+} */
