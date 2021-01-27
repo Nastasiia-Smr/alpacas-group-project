@@ -1,0 +1,59 @@
+.farm-headline {
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.text {
+  margin: 30px;
+}
+
+.farm-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.farm-container img,
+.accommodation-container img,
+.shop-container img {
+  width: 500px;
+  /* height: auto; */
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  margin: 10px 25px;
+}
+
+.farm-container img:hover {
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.66);
+  /* transform: scale(1.03); */
+}
+
+.alpaca-gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 25px;
+  margin: 5px auto;
+}
+.headline {
+  text-align: center;
+}
+.alpaca {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.alpaca img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  .alpaca,
+  .farm-container {
+    flex-direction: column; 
+    justify-content: center;
+  }
+}
