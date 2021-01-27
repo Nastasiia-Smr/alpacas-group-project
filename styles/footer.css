@@ -5,15 +5,326 @@
   padding: 0;
 }
 
+/* MAJD SECTIONS */
+/* MAJD NAVBAR */
+.logo {
+  height: 30px;
+  width: 50px;
+}
+
+/* desktop */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  background-color: #f9ebe3;
+  position: fixed;
+}
+
+.brand-title {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.navbar-links ul {
+  display: flex;
+  /* flex-direction: column; */
+  /* text-align: center; */
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #4e3b30;
+  border-radius: 10px;
+}
+
+/* tablet and mobile */
+@media only screen and (max-width: 930px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* MAJD ABOUT SECTION */
+.section__about {
+  width: 100%;
+  background-color: #4e3b30;
+  color: white;
+  padding: 2rem 1rem 3rem 1rem;
+  margin-top: -8px;
+}
+
+.about__block {
+  text-align: center;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.about__headline {
+  margin: 1rem;
+}
+
+/* MOE SECTIONS */
+/* MOE THE FARM */
+.section__thefarm {
+  width: 100%;
+  height: auto;
+  background-color: #F9EBE3;
+  padding: 1rem;
+}
+.thefarm__images-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thefarm__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.thefarm__image {
+  margin: 1rem 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* MOE THE ALPACAS */
+.section__thealpacas {
+  width: 100%;
+  background-color: #AA8068;
+  padding: 1rem;
+}
+
+.thealpacas__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.thealpacas__images-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thealpacas__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.thealpacas__name {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+/* MOE TOURS */
+.section__tours {
+  width: 100%;
+  background-color: #4e3b30;
+  color: white;
+  padding: 1rem;
+}
+
+.tours__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.tours__cards-items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9EBE3;
+  color: black;
+  padding: 1rem 2rem;
+  margin: 24px;
+  border-radius: 5px;
+}
+
+.tours__cards-headline {
+  margin: 1rem 0;
+}
+
+.tours__cards-p {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.tours__list {
+  list-style: square inside;
+}
+
+.tours__list li {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  background-color: #4e3b30;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .sticker {
+  background-color: black;
+  color: white;
+  font-size: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+} */
+
+/* MOE ACCOMODATION */
+.section__stay {
+  width: 100%;
+  background-color: #AA8068;
+  color: white;
+  padding: 1rem;
+}
+
+.stay__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.stay__cards-item {
+  background-color: #EFCCB8;
+  text-align: center;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.stay__cards-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stay__cards-images {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.stay__text-block {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* MOE SHOP */
+.section__shop {
+  width: 100%;
+  height: auto;
+  background-color: #4e3b30;
+  padding: 1rem;
+}
+
+.shop__headline {
+  color: white;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.shop__cards-item {
+  background-color: #EFCCB8;
+  text-align: center;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.shop__cards-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+/* MAURICIO SECTIONS */
 /* FORM SECTION */
-.contact-form {
+.section__contact-form {
   background-color: #f9ebe3;
   width: 100%;
   height: 600px;
   padding: 2rem;
 }
 
-.form-title {
+.contact-form__headline {
   text-align: center;
   margin: 1rem 0;
 }
@@ -32,7 +343,7 @@ textarea {
 }
 
 input[type="submit"] {
-    width: 100%;
+  width: 100%;
   background-color: #e5ae8c;
   color: white;
   padding: 12px 20px;
@@ -53,59 +364,51 @@ input[type="submit"]:hover {
   line-height: 24px;
 }
 
-.footer-one {
+.footer__block {
   display: flex;
   flex-direction: column;
   /* flex-direction: row; media query */
 }
 
-.footer-links {
+.footer__links {
   color: white;
   text-decoration: none;
 }
 
-.footer-links:hover {
+.footer__links:hover {
   color: tomato;
 }
 
-.footer-title {
+.footer__title {
   text-align: center;
   font-size: 18px;
   margin: 1rem 0;
 }
 
 /* FOOTER COMPANY */
-.footer-company {
+.footer__company {
   padding: 1rem;
 }
 
-.footer-company-info {
+.footer__company-info {
   text-align: center;
 }
 
 /* FOOTER QLINKS */
-.footer-qlinks {
+.footer__qlinks {
   padding: 1rem;
 }
 
-.links-wrapper {
+.footer__qlinks-wrapper {
   display: grid;
-  grid-template-columns:125px 125px;
+  grid-template-columns: 125px 125px;
   justify-items: center;
-  justify-content: center; 
+  justify-content: center;
   white-space: nowrap;
 }
 
-.qlink {
-    grid-area: 1/1/2/3;
-}
-
-.footer-qlinks-left {
-  margin: 0 2rem;
-}
-
-.footer-qlinks-right {
-  margin: 0 2rem;
+.qlink-title-area {
+  grid-area: 1/1/2/3;
 }
 
 .footer-qlinks ul {
@@ -114,14 +417,14 @@ input[type="submit"]:hover {
 
 /* FOOTER SOCIAL */
 .footer-social-icons {
-    display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem 0;
 }
 
 .social-icons li {
-    display: inline;
+  display: inline;
   list-style-type: none;
   margin: 1rem 0;
 }
@@ -177,7 +480,7 @@ align-items: center;
 .copyright {
   width: 100%;
   height: 100px;
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .copyright-text-position {
