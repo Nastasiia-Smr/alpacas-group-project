@@ -7,71 +7,345 @@
     <title>Footer</title>
     <link rel="stylesheet" href="/alpacas-group-project/styles/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
 
-    <!-- SITE FORM SECTION -->
-    <section class="contact-form">
-        <div class="contact-form-container">
-            <h2 class="form-title">
-                Contact Us
-            </h2>
-            <form action="https://formspree.io/f/myyboodg" method="POST">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fullname" placeholder="Your full name..." required>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="../images/logo/alpaca.svg" alt="logo" class="logo">The Happy Alpaca
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#thefarm">farm</a></li>
+                    <li><a href="#thealpacas">alpacas</a></li>
+                    <li><a href="#tours">tours</a></li>
+                    <li><a href="#stay">stay</a></li>
+                    <li><a href="#shop">shop</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-                <label for="email">Email</label>
-                <input type="text" id="lname" name="email" placeholder="Your email..." required>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"
-                    required></textarea>
-
-                <input type="submit" value="Send">
-            </form>
+        <!-- HERO -->
+        <div class="hero__block">
+            <img class="hero" src="../images/alpacas/contrast-alpaca.jpg" alt="hero">
         </div>
+    </header>
 
+    <!-- MAIN -->
+    <main>
+        <!-- SECTIONS WITH NEW CLASSES AND MORE DIVS TO USE FLEX AND MOVE STUFF IN MEDIA QUERIES -->
+        <section class="section__about">
+            <div class="about__block">
+                <h2 id="about" class="about__headline">About</h2>
+                <p class="about__p">
+                    The Happy Alpaca Farm is a fictive farm everyone can enjoy. Book a tour with our friendly alpacas or
+                    explore the meadows and woods arround the farm and enjoy a happy stay with the whole family.
+                </p>
+            </div>
+        </section>
 
-    </section>
+        <section class="section__thefarm">
+            <div class="thefarm__headline-block">
+                <h2 id="thefarm" class="thefarm__headline">The Farm</h2>
+            </div>
+            <div class="thefarm__images-block">
+                <div class="thefarm__image-blok-item">
+                    <img class="thefarm__image" src="../images/farm/StockSnap_49FA273DDD.jpg" alt="Tools" />
+                </div>
+                <div class="thefarm__image-blok-item">
+                    <img class="thefarm__image" src="../images/farm/StockSnap_BWRCGCOECB.jpg" alt="Horse" />
+                </div>
+                <div class="thefarm__image-blok-item">
+                    <img class="thefarm__image" src="../images/farm/StockSnap_QZZC02VYSS.jpg" alt="Cow" />
+                </div>
+                <div class="thefarm__image-blok-item">
+                    <img class="thefarm__image" src="../images/farm/StockSnap_V9YD0J883E.jpg" alt="Chick" />
+                </div>
+            </div>
+        </section>
 
-    <!-- SITE FOOTER -->
+        <section class="section__thealpacas">
+            <div class="thealpacas__headline-block">
+                <h2 id="thealpacas" class="thealpacas__headline">The Alpacas</h2>
+            </div>
+            <div class="thealpacas__images-block">
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/balou.jpg" alt="Balou" />
+                    <span class="thealpacas__name">Balou</span>
+                </div>
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/gismo.jpg" alt="Gismo" />
+                    <span class="thealpacas__name">Gizmo</span>
+                </div>
+
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/hardi.jpg" alt="Hardi" />
+                    <span class="thealpacas__name">Hardi</span>
+                </div>
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/kalle.jpg" alt="Kalle" />
+                    <span class="thealpacas__name">Kalle</span>
+                </div>
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/king.jpg" alt="King" />
+                    <span class="thealpacas__name">King</span>
+                </div>
+                <div class="thealpacas__images-block-item">
+                    <img class="thealpacas__image" src="../images/alpacas/scotty.jpg" alt="Scotty" />
+                    <span class="thealpacas__name">Scotty</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__tours">
+            <div class="tours__headline-block">
+                <h2 id="tours" class="tours__headline">Guided Tours</h2>
+            </div>
+
+            <div class="tours__cards-block">
+                <div class="tours__cards-items">
+                    <div class="tours__cards__text-block">
+                        <h3 class="tours__cards-headline">
+                            Day Tour One
+                        </h3>
+
+                        <p class="tours__cards-p">
+                            Book a tour with our friendly alpacas and explore the meadows and
+                            woods arround the farm.
+                        </p>
+
+                        <ul class="tours__list">
+                            <li>Guided Tour for 2 adults</li>
+                            <li>Breakfast and Lunch included</li>
+                            <li>One Picture with your favorite Alpaca</li>
+                        </ul>
+
+                        <p class="tours__cards-p">
+                            Prices starting from 50 EURO)
+                        </p>
+                    </div>
+
+                    <div class="tours__button-block">
+                        <a class="button" href="#">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <!-- REMOVING FOR NOW <a class="sticker" href="#">MOST BOOKED</a> -->
+                <div class="tours__cards-items">
+                    <div class="tours__cards__text-block">
+                        <h3 class="tours__cards-headline">
+                            Day Tour Two
+                        </h3>
+
+                        <p class="tours__cards-p">
+                            Book a tour with our friendly alpacas and explore the meadows and woods arround the farm.
+                        </p>
+
+                        <ul class="tours__list">
+                            <li>Guided Tour for 2 adults</li>
+                            <li>One night in our beautiful hotel</li>
+                            <li>Breakfast and lunch included</li>
+                            <li>One Picture with your favorite Alpaca</li>
+                        </ul>
+
+                        <p class="tours__cards-p">
+                            After the tour you enjoy the rest of your stay in our cosy accommodiation with fireplace and
+                            perfect view from the windows.
+                        </p>
+
+                        <p class="tours__cards-p">
+                            Prices starting from 100 EUR
+                        </p>
+                    </div>
+
+                    <div class="tours__button-block">
+                        <a class="button" href="#">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tours__cards-items">
+                    <div class="tours__cards__text-block">
+                        <h3 class="tours__cards-headline">
+                            Day Tour Three
+                        </h3>
+
+                        <p class="tours__cards-p">
+                            Book a tour with our friendly alpacas and explore the meadows and woods arround the farm
+                        </p>
+
+                        <ul class="tours__list">
+                            <li>Guided Tour for 2 adults</li>
+                            <li>Two nights in our beautiful hotel</li>
+                            <li>Breakfast and lunch invluded</li>
+                            <li>One Picture with your favorite Alpaca</li>
+                        </ul>
+
+                        <p class="tours__cards-p">
+                            After the tour you enjoy the rest of your stay in our cosy accommodiation with fireplace and
+                            perfect view from the windows.
+                        </p>
+
+                        <p class="tours__cards-p">
+                            Prices starting from 150 EURO
+                        </p>
+                    </div>
+
+                    <div class="tours__button-block">
+                        <a class="button" href="#">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section__stay">
+            <div class="stay__headline-block">
+                <h2 id="stay" class="stay__headline">
+                    Accommodation
+                </h2>
+            </div>
+
+            <div class="stay__cards-block">
+                <div class="stay__cards-item">
+                    <img class="stay__cards-images" src="../images/accommodation/StockSnap_XTRAJDQIPV.jpg" alt="Nature" />
+                    <h3>Enjoy the Nature</h3>
+                    <p>
+                        Wonderful forests and fields surround our farm. There is so much to discover. Unwind and enjoy fresh country air. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis, tempore incidunt eligendi quis quaerat dignissimos dolorem sequi magni beatae modi facere praesentium illo. Ullam dolor omnis neque velit voluptate!
+                    </p>
+                </div>
+                <div class="stay__cards-item">
+                    <img class="stay__cards-images" src="../images/accommodation/StockSnap_BD0AC07780.jpg" alt="Book" />
+                    <h3>Relax</h3>
+                    <p>
+                        There is nothing more relaxing than exploring the surroundings
+                        with an alpaca. You will quickly get used to your new friend and have unforgettable adventures.
+                    </p>
+                </div>
+                <div class="stay__cards-item">
+                    <img class="stay__cards-images" src="../images/accommodation/StockSnap_T0BHAFEFFR.jpg" alt="Cabine" />
+                    <h3>The Cabine</h3>
+                    <p>
+                        Spend your night in our stunning lakeside cabin. Light fire in the fireplace and enjoy a good book and a glass of wine from our farm store. Pure relaxation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="stay__text-block">
+                <p class="stay__text-p">
+                    We convince you with our wide range of products. Contact us and ask for your individual requirements. We will get back to you as soon as possible to make your stay unforgettable.
+                </p>
+                <a class="button" href="#">
+                    BOOK NOW
+                </a>
+            </div>
+        </section>
+
+        <section class="section__shop">
+            <div class="shop__headline-block">
+                <h2 id="shop" class="shop__headline">
+                    The Farm Shop
+                </h2>
+            </div>
+            <div class="shop__cards-block">
+                <div class="shop__cards-item">
+                    <img class="shop__cards-image" src="../images/farm-shop/StockSnap_THXU08ODDE.jpg" alt="Coffee" />
+                    <h3>Coffee</h3>
+                    <p>
+                        Enjoy our coffee variety of filter coffee, cold brew, capucchino and other specialties. Freshly
+                        prepared daily by our trained baristas with love.
+                    </p>
+                </div>
+    
+                <div class="shop__cards-item">
+                    <img class="shop__cards-image" src="../images/farm-shop/StockSnap_NKU48AAAWF.jpg" alt="Bread" />
+                    <h3>Bread</h3>
+                    <p>
+                        Our country bakery bakes fresh and handmade baked goods from the stone oven. Let us surprise you
+                        with a wide variety of breads and cakes.
+                    </p>
+                </div>
+    
+                <div class="shop__cards-item">
+                    <img class="shop__cards-image" src="../images/farm-shop/StockSnap_E4J3BP6ZNJ.jpg" alt="Fruits" />
+                    <h3>Fruits</h3>
+                    <p>
+                        Fresh seasonal fruit from our orchards and surrounding farms. We offer everything that can be
+                        harvested to the current season in the best organic quality you can get.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAURICIO FORM SECTION -->
+        <section class="section__contact-form">
+            <div class="contact-form__block">
+                <h2 id="contact" class="contact-form__headline">
+                    Contact Us
+                </h2>
+                <form action="https://formspree.io/f/myyboodg" method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your full name..." required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="lname" name="email" placeholder="Your email..." required>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"
+                        required></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- MAURICIO FOOTER -->
     <footer class="footer">
 
-        <div class="footer-one">
-            <div class="footer-company">
-                <h5 class="footer-title">Our company</h5>
-                <p class="footer-company-info">
+        <div class="footer__block">
+            <div class="footer__company">
+                <h5 class="footer__title">Our company</h5>
+                <p class="footer__company-info">
                     We are a happy alpacas company 100% organic. Our headquarters are in the belly of the world, el
                     Cuzco,
                     Perú, where we dance all night with the alpacas songs. Come and experience something unique and
                     beautiful with us!
                 </p>
             </div>
-            <div class="footer-qlinks">
-                <div class="links-wrapper">
-                    <h5 class="footer-title qlink">Quick Links</h5>
-                    <a class="footer-links" href="#about">About Us</a>
-                    <a class="footer-links" href="#farm">Farm</a>
-                    <a class="footer-links" href="#alpacas">Alpacas</a>
-                    <a class="footer-links" href="#tours">Tours</a>
-                    <a class="footer-links" href="#stay">Stay</a>
-                    <a class="footer-links" href="#shop">Shop</a>
-                </div>
+
+            <div class="footer__qlinks">
+                <div class="footer__qlinks-wrapper">
+                    <h5 class="footer__title qlink-title-area">Quick Links</h5>
+                    <a class="footer__links" href="#about">About Us</a>
+                    <a class="footer__links" href="#farm">Farm</a>
+                    <a class="footer__links" href="#alpacas">Alpacas</a>
+                    <a class="footer__links" href="#tours">Tours</a>
+                    <a class="footer__links" href="#stay">Stay</a>
+                    <a class="footer__links" href="#shop">Shop</a>
+                </div>  
             </div>
         </div>
-        </div>
-
 
         <div class="footer-social-icons">
             <div class="social-title-container">
-                <h5 class="footer-title">Our Social Media</h5>
+                <h5 class="footer__title">Our Social Media</h5>
             </div>
             <div class="social-icons-container">
                 <ul class="social-icons">
@@ -81,17 +355,16 @@
                     <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
-
         </div>
 
         <div class="copyright">
             <hr class="footer-hr">
             <div class="copyright-text-position">
                 <p class="copyright-text">
-                    DCI Copyright &copy; 2020 / All Rights Reserved 
+                    DCI Copyright &copy; 2021 / All Rights Reserved
                 </p>
                 <p class="copyright-text">
-                    Created by <a class="footer-links" href="#">Anastasia Alpacas Felices</a>
+                    Created by <a class="footer__links" href="#">Anastasia Alpacas Felices</a>
                 </p>
             </div>
         </div>
