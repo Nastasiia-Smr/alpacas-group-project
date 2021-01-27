@@ -1,0 +1,232 @@
+/* GENERAL */
+@import "colors.css";
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SECTIONS BACKGROUND */
+
+.accommodation {
+  background: var(--color-primary-tint-orange-1);
+}
+.farm-shop {
+  background: var(--color-gray-tint-gray-0);
+}
+
+/* COMMON THING (GONNA TRY TO MAKE IT CLEANER) */
+
+.accommodation,
+.booking,
+.farm-shop {
+  padding: 30px 0;
+  margin: 15px 0;
+}
+
+.accommodation-headline,
+.shop-headline {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.post-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+.post-item {
+  padding: 10px;
+}
+.post-link {
+  text-decoration: none;
+  display: block;
+}
+.post-item-wrap {
+  overflow: hidden;
+  position: relative;
+  border-left: 5px solid red;
+  /* box-shadow: -6px 5px 12px 1px rgba(0, 0, 0, 0.76); */
+}
+.post-item img {
+  display: block;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.text-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 86%;
+  padding: 20px;
+  background-color: var(--color-gray-tint-gray-6);
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.5s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+.post-item:hover .text-wrapper {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s cubic-bezier(0.33, 0.02, 0, 0.93) 0.3s;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: var(--color-primary-tint-orange-6);
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.33, 0.02, 0, 0.93) 0.2s;
+}
+.post-item:hover .overlay {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+.post-content {
+  margin-bottom: 5px;
+  color: #000200;
+  font-size: 16px;
+}
+.post-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a4a40;
+  text-transform: uppercase;
+}
+
+/* BOOKING SECTION */
+.booking {
+  margin: 2rem auto;
+  width: 65%;
+  text-align: center;
+}
+.booking-btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--color-primary-tint-orange-9);
+  background: var(--color-gray-tint-gray-0);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.booking-btn:hover {
+  background: var(--color-accent-tint-blue-8);
+  box-shadow: 0 15px 20px #606e79;
+  color: white;
+  transform: translateY(-7px);
+}
+
+/* SOME MEDIA@ */
+
+/* @media (min-width: 768px) {
+  .post-item {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 960px) {
+  .post-item {
+    flex-basis: 33.333333333%;
+  }
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    width: 100%;
+  }
+  
+  .headline {
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  
+  .text {
+    margin: 30px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .container img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px;
+  }
+  
+  .img-text {
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  .img-text img {
+    width: 100%;
+  }
+  
+  
+  .button {
+    background-color: #c4a265;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: auto 20px;
+    display: block;
+    max-width: 400px;
+  }
+  
+  .sticker {
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .card {
+    background-color: grey;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    max-width: 400px;
+    height: 600px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container {
+      flex-direction: column;
+    }
+  } */
