@@ -1,0 +1,518 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAJD SECTIONS */
+/* MAJD NAVBAR */
+.logo {
+  height: 30px;
+  width: 50px;
+}
+
+/* desktop */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  background-color: #f9ebe3;
+  position: fixed;
+}
+
+.brand-title {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.navbar-links ul {
+  display: flex;
+  /* flex-direction: column; */
+  /* text-align: center; */
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #4e3b30;
+  border-radius: 10px;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* MAJD ABOUT SECTION */
+.section__about {
+  width: 100%;
+  background-color: #4e3b30;
+  color: white;
+  padding: 2rem 1rem 3rem 1rem;
+  margin-top: -8px;
+}
+
+.about__block {
+  text-align: center;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.about__headline {
+  margin: 1rem;
+}
+
+/* MOE SECTIONS */
+/* MOE THE FARM */
+.section__thefarm {
+  width: 100%;
+  height: auto;
+  background-color: #F9EBE3;
+  padding: 1rem;
+}
+
+.thefarm__images-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thealpacas__images-block-item {
+  /* border: 1px solid white; */
+}
+
+.thefarm__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.thefarm__image {
+  margin: 1rem 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* MOE THE ALPACAS */
+.section__thealpacas {
+  width: 100%;
+  background-color: #AA8068;
+  padding: 1rem;
+}
+
+.thealpacas__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.thealpacas__images-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thealpacas__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.thealpacas__name {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+/* MOE TOURS */
+.section__tours {
+  width: 100%;
+  background-color: #4e3b30;
+  color: white;
+  padding: 1rem;
+}
+
+.tours__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.tours__cards-items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9EBE3;
+  color: black;
+  padding: 1rem 2rem;
+  margin: 24px;
+  border-radius: 5px;
+}
+
+.tours__cards-headline {
+  margin: 1rem 0;
+}
+
+.tours__cards-p {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.tours__list {
+  list-style: square inside;
+}
+
+.tours__list li {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  background-color: #4e3b30;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .sticker {
+  background-color: black;
+  color: white;
+  font-size: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+} */
+
+/* MOE ACCOMODATION */
+.section__stay {
+  width: 100%;
+  background-color: #AA8068;
+  color: white;
+  padding: 1rem;
+}
+
+.stay__headline {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.stay__cards-item {
+  background-color: #EFCCB8;
+  text-align: center;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.stay__cards-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stay__cards-images {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.stay__text-block {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* MOE SHOP */
+.section__shop {
+  width: 100%;
+  height: auto;
+  background-color: #4e3b30;
+  padding: 1rem;
+}
+
+.shop__headline {
+  color: white;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.shop__cards-item {
+  background-color: #EFCCB8;
+  text-align: center;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.shop__cards-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+/* MAURICIO SECTIONS */
+/* FORM SECTION */
+.section__contact-form {
+  background-color: #f9ebe3;
+  width: 100%;
+  height: 600px;
+  padding: 2rem;
+}
+
+.contact-form__block {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact-form__headline {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #e5ae8c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4e3b30;
+}
+
+/* FOOTER GENERALS */
+.footer {
+  background-color: #4e3b30;
+  padding: 0.8rem;
+  color: white;
+  line-height: 24px;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; media query */
+}
+
+.footer__links {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__links:hover {
+  color: tomato;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+/* FOOTER COMPANY */
+.footer__company {
+  padding: 1rem;
+}
+
+.footer__company-info {
+  text-align: center;
+}
+
+/* FOOTER QLINKS */
+.footer__qlinks {
+  padding: 1rem;
+}
+
+.footer__qlinks-wrapper {
+  display: grid;
+  grid-template-columns: 125px 125px;
+  justify-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.qlink-title-area {
+  grid-area: 1/1/2/3;
+}
+
+.footer-qlinks ul {
+  list-style-type: none;
+}
+
+/* FOOTER SOCIAL */
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.social-icons li {
+  display: inline;
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #4e3b30;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #efccb8;
+}
+.social-icons a.twitter:hover {
+  background-color: #efccb8;
+}
+.social-icons a.linkedin:hover {
+  background-color: #efccb8;
+}
+.social-icons a.instagram:hover {
+  background-color: #efccb8;
+}
+
+/* FOOTER COPYRIGHT */
+.copyright {
+  width: 100%;
+  height: 100px;
+  margin-top: 2rem;
+}
+
+.copyright-text-position {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; media query */
+}
+
+.footer-hr {
+  margin: 1rem 0;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.copyright-text {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+/* MEDIA QUERIES NAVBAR  */
+/* tablet and mobile */
+@media only screen and (max-width: 930px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}

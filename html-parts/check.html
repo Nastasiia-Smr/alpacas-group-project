@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .alpaca-carousel {
+            width: 100vw;
+            height: 200px;
+        }
+
+        @keyframes display {
+            0% {
+                transform: translateX(200px);
+                opacity: 0;
+            }
+
+            10% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            20% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+        }
+
+        .alpaca-carousel,
+        .alpaca-text-carousel {
+            position: relative;
+            width: 100vw;
+            height: 300px;
+            margin-top: 15vh;
+        }
+
+        .alpaca-carousel>img,
+        .alpaca-text-carousel>h4 {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            top: 0;
+            left: calc(50% - 100px);
+            opacity: 0;
+            animation: display 10s infinite;
+            object-fit: cover;
+        }
+
+        img:nth-child(2),
+        h4:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        img:nth-child(3),
+        h4:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        img:nth-child(4),
+        h4:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        img:nth-child(5),
+        h4:nth-child(5) {
+            animation-delay: 8s;
+        }
+
+        img:nth-child(6),
+        h4:nth-child(6) {
+            animation-delay: 10s;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="alpaca-gallery">
+        <div class="alpaca-carousel">
+            <img src="../images/alpacas/balou.jpg" alt="Balou" />
+            <img src="../images/alpacas/gismo.jpg" alt="Gismo" />
+            <img src="../images/alpacas/hardi.jpg" alt="Hardi" />
+            <img src="../images/alpacas/kalle.jpg" alt="Kalle" />
+            <img src="../images/alpacas/king.jpg" alt="King" />
+            <img src="../images/alpacas/scotty.jpg" alt="Scotty" />
+        </div>
+        <div class="alpaca-text-carousel">
+            <h4>Balou</h4>
+            <h4>Gismo</h4>
+            <h4>Hardi</h4>
+            <h4>Kalle</h4>
+            <h4>King</h4>
+            <h4>Scotty</h4>
+        </div>
+    </section>
+</body>
+
+</html>
