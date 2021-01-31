@@ -24,13 +24,13 @@
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#farm">farm</a></li>
-                    <li><a href="#alpacas">alpacas</a></li>
-                    <li><a href="#tours">tours</a></li>
-                    <li><a href="#stay">stay</a></li>
-                    <li><a href="#shop">shop</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#about" onclick="toogleMenu()">about</a></li>
+                    <li><a href="#farm" onclick="toogleMenu()">farm</a></li>
+                    <li><a href="#alpacas" onclick="toogleMenu()">alpacas</a></li>
+                    <li><a href="#tours" onclick="toogleMenu()">tours</a></li>
+                    <li><a href="#stay" onclick="toogleMenu()">stay</a></li>
+                    <li><a href="#shop" onclick="toogleMenu()">shop</a></li>
+                    <li><a href="#contact" onclick="toogleMenu()">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +43,9 @@
                     <img src="images/extra-images/curious-alpaca.jpg" alt="hero" class="hero">
                 </div>
                 <div class="hero-image-text-wrapper">
-                    <h3>About</h3>
+                    <hr>
+                    <h3 class="headline">About</h3>
+                    <hr>
                     <p>The Happy Alpaca Farm is a fictive farm everyone can enjoy. Book a tour with our friendly
                         alpacas
                         or explore
@@ -55,7 +57,9 @@
     </section>
 
     <section class="farm-block" id="farm">
-        <h2 class="farm-headline">The Farm</h2>
+        <hr>
+        <h2 class="headline">The Farm</h2>
+        <hr>
         <div class="farm-container">
             <img src="images/farm/StockSnap_49FA273DDD.jpg" alt="Tools" />
             <img src="images/farm/StockSnap_BWRCGCOECB.jpg" alt="Horse" />
@@ -69,7 +73,9 @@
     </section>
 
     <section class="alpaca-gallery" id="alpacas">
+        <hr>
         <h2 class="headline">The Alpacas</h2>
+        <hr>
         <div class="alpaca">
             <div class="img-text">
                 <img src="images/alpacas/balou.jpg" alt="Balou" />
@@ -99,10 +105,11 @@
         </div>
     </section>
 
-    <section>
-        <h2 class="headline" id="tours">Guided Tours</h2>
+    <section class="tours" id="tours">
+        <hr>
+        <h2 class="headline">Guided Tours</h2>
+        <hr>
         <div class="section__tours">
-
             <div class="tours__cards-items">
                 <div class="tours__cards__text-block">
                     <h3 class="tours__cards-headline">
@@ -193,66 +200,61 @@
                     <a class="booking-btn" href="#"><span>book now</span></a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="accommodation" id="stay">
-        <h2 class="accommodation-headline">Accommodation</h2>
+        <hr>
+        <h2 class="headline">Accommodation</h2>
+        <hr>
         <div class="post-wrap">
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/accommodation/StockSnap_XTRAJDQIPV.jpg" alt="Nature">
+                    <div class="image-wrapper">
+                        <img src="images/accommodation/StockSnap_XTRAJDQIPV.jpg" alt="Nature">
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">Enjoy the Nature</h3>
+                        <div class="post-content">
+                            <p>Wonderful forests and fields surround our farm. There is so much
+                                to discover. Unwind and enjoy fresh country air.</p>
                         </div>
-                        <div class="text-wrapper">
-                            <h3 class="post-title">Enjoy the Nature</h3>
-                            <div class="post-content">
-                                <p>Wonderful forests and fields surround our farm. There is so much
-                                    to discover. Unwind and enjoy fresh country air.</p>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
 
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/accommodation/StockSnap_BD0AC07780.jpg" alt="Relax">
+                    <div class="image-wrapper">
+                        <img src="images/accommodation/StockSnap_BD0AC07780.jpg" alt="Relax">
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">Relax</h3>
+                        <div class="post-content">
+                            <p> There is nothing more relaxing than exploring the surroundings
+                                with an alpaca. You will quickly get used to your new friend and
+                                have unforgettable adventures.</p>
                         </div>
-                        <div class="text-wrapper">
-                            <h3 class="post-title">Relax</h3>
-                            <div class="post-content">
-                                <p> There is nothing more relaxing than exploring the surroundings
-                                    with an alpaca. You will quickly get used to your new friend and
-                                    have unforgettable adventures.</p>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
 
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/accommodation/StockSnap_T0BHAFEFFR.jpg" alt="Cabin">
+                    <div class="image-wrapper">
+                        <img src="images/accommodation/StockSnap_T0BHAFEFFR.jpg" alt="Cabin">
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">The Cabine</h3>
+                        <div class="post-content">
+                            <p> Spend your night in our stunning lakeside cabin. Light fire in the
+                                fireplace and enjoy a good book and a glass of wine from our farm
+                                store. Pure relaxation.</p>
                         </div>
-                        <div class="text-wrapper">
-                            <h3 class="post-title">The Cabine</h3>
-                            <div class="post-content">
-                                <p> Spend your night in our stunning lakeside cabin. Light fire in the
-                                    fireplace and enjoy a good book and a glass of wine from our farm
-                                    store. Pure relaxation.</p>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
         </div>
@@ -260,6 +262,7 @@
 
     <!-- small P in between of sections -->
     <section class="booking">
+        <hr>
         <p class="Booking-content">
             Could we convince you of our wide range of products? Then what are you
             waiting for? Contact us via the contact form and ask for your
@@ -267,81 +270,78 @@
             your stay unforgettabl
         </p>
         <a class="booking-btn" href="#"><span>book now</span></a>
+        <hr>
     </section>
 
     <!-- farm shop section -->
     <section class="farm-shop" id="shop">
-        <h2 class="shop-headline">The Farm Shop</h2>
+        <hr>
+        <h2 class="headline">The Farm Shop</h2>
+        <hr>
         <div class="post-wrap">
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/farm-shop/StockSnap_THXU08ODDE.jpg" alt="Coffee">
-
+                    <div class="image-wrapper">
+                        <img src="images/farm-shop/StockSnap_THXU08ODDE.jpg" alt="Coffee">
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">Coffee</h3>
+                        <div class="post-content">
+                            <p>
+                                Enjoy our coffee variety of filter coffee, cold brew, capucchino
+                                and other specialties. Freshly prepared daily by our trained
+                                baristas with love.
+                            </p>
                         </div>
-                        <div class="text-wrapper">
-                            <h3 class="post-title">Coffee</h3>
-                            <div class="post-content">
-                                <p>
-                                    Enjoy our coffee variety of filter coffee, cold brew, capucchino
-                                    and other specialties. Freshly prepared daily by our trained
-                                    baristas with love.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
 
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/farm-shop/StockSnap_NKU48AAAWF.jpg" alt="Bread" />
+                    <div class="image-wrapper">
+                        <img src="images/farm-shop/StockSnap_NKU48AAAWF.jpg" alt="Bread" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">Bread</h3>
+                        <div class="post-content">
+                            <p>
+                                Our country bakery bakes fresh and handmade baked goods from the
+                                stone oven. Let us surprise you with a wide variety of breads and
+                                cakes.
+                            </p>
                         </div>
-                        <div class="text-wrapper">
-                            <h3 class="post-title">Bread</h3>
-                            <div class="post-content">
-                                <p>
-                                    Our country bakery bakes fresh and handmade baked goods from the
-                                    stone oven. Let us surprise you with a wide variety of breads and
-                                    cakes.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
 
             <div class="post-item">
                 <div class="post-item-wrap">
-                    <a href="" class="post-link">
-                        <div class="image-wrapper">
-                            <img src="images/farm-shop/StockSnap_E4J3BP6ZNJ.jpg" alt="Fruits" />
+                    <div class="image-wrapper">
+                        <img src="images/farm-shop/StockSnap_E4J3BP6ZNJ.jpg" alt="Fruits" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h3 class="post-title">Fruits</h3>
+                        <div class="post-content">
+                            <p>
+                                Fresh seasonal fruit from our orchards and surrounding farms. We
+                                offer everything that can be harvested to the current season in
+                                the best organic quality you can get.
+                            </p>
                         </div>
-                        <div class="text-wrapper">
-                            <div class="post-content">
-                                <p>
-                                    Fresh seasonal fruit from our orchards and surrounding farms. We
-                                    offer everything that can be harvested to the current season in
-                                    the best organic quality you can get.
-                                </p>
-                            </div>
-                            <h3 class="post-title">Fruits</h3>
-                        </div>
-                        <div class="overlay"></div>
-                    </a>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
             </div>
         </div>
+        <hr>
     </section>
 
     <!-- MAURICIO FORM SECTION -->
     <section class="section__contact-form" id="contact">
+
         <div class="contact-form__block">
             <div class="contact-form__headline-block">
                 <h2 id="contact" class="contact-form__headline">
@@ -360,7 +360,7 @@
                     <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"
                         required></textarea>
 
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" class="submit-btn">
                 </form>
             </div>
         </div>
