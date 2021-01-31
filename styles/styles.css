@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Fraunces", serif;
+  scroll-behavior: smooth;
 }
 body {
   background: rgb(236, 238, 239);
@@ -31,12 +32,9 @@ body {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  /* flex-direction: column; */
-  /* background-color: #98a1a8; */
   color: var(--color-gray-tint-gray-0);
   background-color: var(--color-accent-tint-blue-9);
   text-shadow: 2px var(--color-gray-tint-gray-6);
-  /* position: fixed; */
   top: 0;
   left: 0;
   z-index: 100;
@@ -50,8 +48,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  /* flex-direction: column; */
-  /* text-align: center; */
 }
 
 .navbar-links li {
@@ -101,7 +97,6 @@ body {
   display: block;
   width: 100%;
   margin: 0 auto;
-  /* max-width: 400px; */
   max-height: 500px;
   object-fit: cover;
 }
@@ -151,7 +146,6 @@ body {
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.33, 0.02, 0, 0.93) 0.2s;
 }
-
 /* END OF HERO IS HERE */
 
 .farm-block,
@@ -181,7 +175,6 @@ hr {
   height: 300px;
   object-fit: scale-down;
   padding: 20px;
-  /* margin: 20px; */
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
 }
