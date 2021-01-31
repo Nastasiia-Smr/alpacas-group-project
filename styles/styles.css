@@ -16,6 +16,7 @@ body {
   );
   color: var(--color-primary-tint-orange-9);
   font-size: 16px;
+  font-weight: normal;
 }
 /* navbar */
 .logo {
@@ -93,6 +94,7 @@ body {
 .hero-image-item-wrap {
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .hero-image-wrapper img {
@@ -195,11 +197,11 @@ hr {
   text-align: center;
   text-transform: uppercase;
 }
+
 .headline::before,
 .headline::after {
   content: "•";
   padding: 0 25px;
-
 }
 .img-text {
   vertical-align: top;
@@ -219,7 +221,6 @@ hr {
   border-radius: 50%;
   margin: 10px;
   transition: all 0.4s ease-in-out;
-
 }
 .alpaca-gallery img:hover {
   box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.66);
@@ -233,10 +234,12 @@ hr {
   max-width: 100vw;
   padding: 1rem;
   flex-wrap: wrap;
+  font-weight: 600;
+  color: var(--color-light);
 }
 
 .tours__cards-headline i {
-  color: #b32400d5;
+  color: var(--color-primary);
   transition: all 0.4s ease-in-out;
 }
 
@@ -251,7 +254,7 @@ hr {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-primary-tint-orange-0);
+  background-color: #4e3b30d3;
   padding: 1rem 2rem;
   margin: 24px;
   border-radius: 5px;
@@ -262,6 +265,7 @@ hr {
 .tours__cards-headline {
   margin: 1rem 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .tours__cards-p {
@@ -277,11 +281,11 @@ hr {
   margin: 0.5rem 0;
 }
 
-/* COMMON THING (GONNA TRY TO MAKE IT CLEANER) */
 
+.farm-block,
 .accommodation,
-.booking,
 .farm-shop {
+  background-color: #f4dcce54;
   padding: 30px 0;
   margin: 15px 0;
 }
@@ -292,6 +296,7 @@ hr {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  cursor: pointer;
 }
 
 .post-item {
@@ -373,6 +378,7 @@ hr {
   margin: 2rem auto;
   width: 65%;
   text-align: center;
+  padding: 30px 0;
 }
 
 .booking-btn {
@@ -390,40 +396,55 @@ hr {
   background: var(--color-gray-tint-gray-0);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .booking-btn:hover {
   background: var(--color-accent-tint-blue-8);
   box-shadow: 0 15px 20px #606e79;
-  color: white;
+  color: var(--color-light);
   transform: translateY(-7px);
 }
 
+.tour-btn:hover{
+  background: var(--color-primary);
+  transform: translateY(-7px);
+  box-shadow: 0 15px 20px #07070779;
+}
 /* MAURICIO SECTIONS */
 /* FORM SECTION */
 .section__contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   height: auto;
   padding: 2rem;
+ 
 }
 
 .contact-form__block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  width: 350px;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 15px;
   box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #4e3b30d3;
+  color: var(--color-light);
 }
 
 .contact-form__headline {
   text-align: center;
   margin: 1rem 0;
+}
+
+.contact-form__headline::before,
+.contact-form__headline::after {
+  content: "•";
+  padding: 0 25px;
+  color: var(--color-light);
 }
 
 input[type="text"],
@@ -437,21 +458,31 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  outline: none;
+  background: var(--color-gray-tint-gray-0);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus  {
+  box-shadow: inset 0 0 0 2px #e5ae8cef;
+  background-color: #fdf9f6ea;
 }
 
 input[type="submit"] {
   width: 100%;
-  background-color: var(--color-accent-tint-blue-9);
-  color: white;
+  background-color: var(--color-light);
+  color: var(--color-primary-tint-orange-9);
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 input[type="submit"]:hover {
-  background-color: #4e3b30;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  transform: translateY(-7px);
 }
 
 /* FOOTER GENERALS */
@@ -546,6 +577,9 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 100%;
+    flex-basis: 33.333333333%;
+    flex-shrink: 0;
   }
 }
 
@@ -557,28 +591,13 @@ input[type="submit"]:hover {
   .tours__cards-headline i {
     font-size: 3em;
   }
-  /* @media only screen and (max-widh: 450px) {
+ @media only screen and (max-width: 450px) {
   .tours__cards-items {
     width: 400px;
-    /* height: auto; */
-  /* max-height: 750px; */
+   height: auto; 
+  max-height: 750px;
 }
 
-/* SOME MEDIA@ */
-
-/* @media (min-width: 768px) {
-    .post-item {
-      flex-basis: 50%;
-      flex-shrink: 0;
-    }
-  }
-  @media (min-width: 960px) {
-    .post-item {
-      flex-basis: 33.333333333%;
-    }
-  } */
-
-/* MEDIA */
 @media only screen and (max-width: 980px) {
   .toggle-button {
     display: flex;
